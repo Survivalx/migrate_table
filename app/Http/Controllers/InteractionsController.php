@@ -13,7 +13,7 @@ class InteractionsController extends Controller
         $interaction = new Interactions();
 
         $interaction->user_id = 1;
-        $interaction->song_id = 2;
+        $interaction->song_id = 1;
         $interaction->liked = 10;
         $interaction->play_count = 10;
 
