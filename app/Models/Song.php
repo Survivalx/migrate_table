@@ -20,6 +20,11 @@ class Song extends Model
         'path',
         'mtime'
     ];
+    protected $guarded = [
+        'id',
+        'created_at',
+        'updated_at'
+    ];
 
     public function album()
     {

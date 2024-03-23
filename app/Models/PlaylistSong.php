@@ -15,6 +15,10 @@ class PlaylistSong extends Model
         'song_id'
     ];
 
+    protected $guarded = [
+        'id'
+    ];
+
     public function playlist()
     {
         return $this->belongsTo(Playlists::class);

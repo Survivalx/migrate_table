@@ -23,6 +23,13 @@ class User extends Authenticatable
         'preferences',
     ];
 
+    protected $guarded = [
+        'id',
+        'is_admin',
+        'created_at',
+        'updated_at'
+    ];
+
     /**
      * The attributes that should be hidden for serialization.
      *
