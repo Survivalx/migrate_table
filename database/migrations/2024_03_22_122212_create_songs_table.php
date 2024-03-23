@@ -15,9 +15,9 @@ return new class extends Migration {
             $table->foreignId("album_id")->constrained()->onDelete("cascade");
             $table->foreignId('artist_id')->constrained()->onDelete("cascade");
             $table->string('title');
-            $table->double('length');
+            $table->string('length');
             $table->integer('track')->nullable();
-            $table->integer('int');
+            $table->integer('disc');
             $table->text('lyrics');
             $table->text('path');
             $table->integer('mtime');
